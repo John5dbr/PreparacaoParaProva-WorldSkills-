@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'font';
+    src: url('Recursos/fontes/idroid.otf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'font';
+}
+ 
+body {
+    background-color: #84E1AD;
+}
+
+#HeaderPrincipal {
+    padding: 25px 0px 0px 0px;
+    height: 240px;
+    background: linear-gradient(to bottom, #3BD680, #195A36);
+    color: white;
+    box-shadow: 0px 0px 10px black;
+}
+#HeaderPrincipal > h1  {
+    font: normal bold 3em 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px 2.5px black;
+    margin: 10px 0px;
+    text-align: center;
+}
+#HeaderPrincipal > p  {
+    font: normal normal 0.90em 'Roboto Condensed', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    margin: 10px 0px;
+}
+#HeaderPrincipal > nav {
+    padding: 75px 0px 0px 0px;
+}
+#HeaderPrincipal > nav > a {
+    font: normal bold 1.15em 'Roboto Condensed', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin: 0px 0px 0px 15px;
+}
+#HeaderPrincipal > nav > a:hover  {
+    border-bottom: 2.5px solid white;
+    transition: 0.1s;
+}
+
+main {
+    margin: auto; 
+    text-align: center;
+    max-width: 900px;
+    background-color: white;
+    box-shadow: 0px 0px 25px black;
+}
+main > section > header > h1 {
+    font-size: 2em;
+    text-align: left;
+    padding: 0px 0px 15px 5px;
+    color: #21623E;
+}
+main > section > header > h2 {
+    background: linear-gradient(to right, #bee7d0, white);
+    padding: 2px 5px;
+    margin: 15px 0px;
+    text-align: left;
+    color: #21623E;
+}
+main > section > article > p {
+    text-indent: 50px;
+    font: normal normal 1em 'Roboto Condensed', sans-serif;
+    text-align: justify;
+}
+main > section > source, img, #NfazSentido {
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 105px black;
+}
+.ParaAfastarCimaIMG {
+    margin: 25px 0px 0px 0px;
+}
+.ParaAfastarBaixoIMG {
+    margin: 0px 0px 15px 0px;
+}
+.ParaAfastarBaixoCimaIMG {
+    margin: 15px 0px 15px 0px;
+}
+
+#Isolado {
+    margin: 0px 25px 0px 25px;
+}
+main > section > aside {
+    background-color: #C5EBD6;
+    border-radius: 10px;
+    margin: 20px 0px;
+    box-shadow: 5px 5px 15px black;
+}
+main > section > aside > header {
+    background-color: #3EAF70;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    text-align: left;
+    margin: 0px 0px;
+    padding: 10px;
+}
+main > section > aside > article {
+    padding: 25px;
+}
+main > section > aside > header > h3 {
+    font: normal bold 1.25em 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px 2.5px black;
+}
+main > section > aside > article > ul {
+    font: normal normal 1em 'Roboto Condensed', sans-serif;
+    list-style-position: inside;
+    columns: 2;
+    text-align: left;
+    margin: 10px 0px 10px 35px;
+}
+main > section > aside > article > ul > li {
+    font: normal normal 1em 'Roboto Condensed', sans-serif;
+}
+main > section > aside > article > p {
+    font: normal normal 1em 'Roboto Condensed', sans-serif;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+footer {
+    margin: auto;
+    height: 35px;
+    background-color: #1A5C38;
+    text-align: center;
+}
+footer > p {
+    padding: 5px 0px;
+    color: white;
+    font: normal normal 1.25em 'Roboto Condensed', sans-serif;
+}
+footer > p > strong {
+    color: white;
+    font: normal bold 1em 'Roboto Condensed', sans-serif;
+}
