@@ -39,6 +39,8 @@ body {
 }
 #HeaderPrincipal > nav {
     padding: 75px 0px 0px 0px;
+    margin: auto;
+    text-align: left;
 }
 #HeaderPrincipal > nav > a {
     font: normal bold 1.15em 'Roboto Condensed', sans-serif;
@@ -55,32 +57,44 @@ body {
 
 main {
     margin: auto; 
+    padding: 20px 0px 0px 0px;
     text-align: center;
     max-width: 900px;
     background-color: white;
-    box-shadow: 0px 0px 25px black;
+    box-shadow: 0px 0px 15px rgb(77, 77, 77);
+    border-radius: 0px 0px 5px 5px;
+}
+main > section > article > p > strong {
+    color: #21623E;
+    font: normal bolder 1em 'Roboto Condensed', sans-serif;
+}
+main > section > article > p > a {
+    color: #21623E;
+    font: normal bolder 1em 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+}
+main > section > article > p > a::after {
+    content: ' ⚐';
 }
 main > section > header > h1 {
     font-size: 2em;
     text-align: left;
     padding: 0px 0px 15px 5px;
     color: #21623E;
+    margin: 15px 30px;
 }
 main > section > header > h2 {
     background: linear-gradient(to right, #bee7d0, white);
     padding: 2px 5px;
-    margin: 15px 0px;
+    margin: 15px 30px;
     text-align: left;
     color: #21623E;
 }
 main > section > article > p {
+    margin: 0px 30px 0px 30px;
     text-indent: 50px;
     font: normal normal 1em 'Roboto Condensed', sans-serif;
     text-align: justify;
-}
-main > section > source, img, #NfazSentido {
-    border: 1px solid black;
-    box-shadow: inset 0px 0px 105px black;
 }
 .ParaAfastarCimaIMG {
     margin: 25px 0px 0px 0px;
@@ -91,7 +105,20 @@ main > section > source, img, #NfazSentido {
 .ParaAfastarBaixoCimaIMG {
     margin: 15px 0px 15px 0px;
 }
-
+main > section > #irina {
+    margin: 30px auto;
+    width: 70vw;
+    height: 200px;
+    max-width: 800px;
+    box-shadow: inset 0px 0px 5px black;
+    background: black url('Recursos/imagens/irina-blok.jpg') no-repeat scroll top center / cover;
+}
+main > section > iframe {
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    height: 300px;
+    border: 25px solid #1A5C38;
+}
 #Isolado {
     margin: 0px 25px 0px 25px;
 }
@@ -99,7 +126,15 @@ main > section > aside {
     background-color: #C5EBD6;
     border-radius: 10px;
     margin: 20px 0px;
-    box-shadow: 5px 5px 15px black;
+    box-shadow: 5px 5px 15px rgb(133, 133, 133);
+}
+main > section > aside > article > p > a {
+    color: #21623E;
+    font: normal bolder 1em 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+}
+main > section > aside > article > p > a::after {
+    content: ' ⚐';
 }
 main > section > aside > header {
     background-color: #3EAF70;
@@ -131,9 +166,15 @@ main > section > aside > article > p {
     text-align: justify;
     text-indent: 50px;
 }
+main > section > p {
+    font: normal normal 1em 'Roboto Condensed', sans-serif;
+    text-align: justify;
+    text-indent: 50px;
+    padding: 0px 0px 20px 0px;
+}
 
 footer {
-    margin: auto;
+    margin: 35px 0px 0px 0px;
     height: 35px;
     background-color: #1A5C38;
     text-align: center;
@@ -146,4 +187,17 @@ footer > p {
 footer > p > strong {
     color: white;
     font: normal bold 1em 'Roboto Condensed', sans-serif;
+}
+
+@media (max-width: 1100px) {
+    #HeaderPrincipal > nav {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    #HeaderPrincipal > nav {
+        padding: 20px 0px 0px 0px;
+        text-align: center;
+    }
 }
